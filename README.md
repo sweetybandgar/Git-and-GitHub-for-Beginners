@@ -58,9 +58,8 @@
 2. If git is not installed. I recommend to go through this [website](https://www.atlassian.com/git/tutorials/install-git) to install it. 
 
 ### Getting a code editor
-Any word processor will work but i recommend to use Visual Code made by microsoft. It is widely used by professionals and its totally free.
-
-You can download [it from here.](https://code.visualstudio.com/download)
++ Any word processor will work but i recommend to use Visual Code made by microsoft. It is widely used by professionals and its totally free. 
++ You can download [it from here.](https://code.visualstudio.com/download)
 
 ### Cloning through VS Code
 1. First *create a folder* named git or choose own your own. 
@@ -100,13 +99,8 @@ You can download [it from here.](https://code.visualstudio.com/download)
     ```
     git commit -m "<__message title__>" -m "<__description__>"
     ```
-### Git push command
-1. We have only saved the changes locally on our machine and not on github. So to save on github also, we will use push command.
-2. *This command save the changes remotely on github.*
-    ```
-    git push
-    ```
-### SSH keys (optional)
+
+### SSH keys *(optional if not using HTTPS link)*
 1. In order to push changes to our github account, we have to prove that we are the owner of that account.
 2. **SSH key:** *connect our local machine to github account.*
 3. Generate SSH key locally. Type the below code in terminal. \
@@ -142,3 +136,57 @@ You can download [it from here.](https://code.visualstudio.com/download)
         ssh-add <__location of the private key__>
         ```
     + Use [this link](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent) for more details.
+
+### Git push command
+1. We have only saved the changes locally on our machine and not on github. So to save on github also, we will use push command.
+2. *This command save the changes remotely on github.*
+    ```
+    git push origin main
+    ```
+    OR simply
+    ```
+    git push 
+    ```
+### When you create github repository locally
+1. Create new folder on your machine where you have cloned your previous repository.
+2. Open this folder's directory in terminal.
+    ```
+    cd <__folder name__>
+    ```
+3. Create README.md in this folder.
+4. Make this folder a git respository. Type this command in terminal.
+    ```
+    git init
+    ```
+5. Save the changes made in this repository.
+    ```
+    git add .
+    ```
+6. Track the changes made.
+    ```
+    git status
+    ```
+7. Commit the changes made.
+    ```
+    git commit -m <__message title__> -m <__description__>
+    ```
+8. Generate a connection between the github account and this local repository.
+    + go to your github account
+    + create a new respository
+    + copy the HTTPS/ SSH link of the remote repository made on github
+    + Add reference to this remote repository through the local repository.
+        ```
+        git remote add origin <__HTTPS/ SSH link of the remote repository__>
+        ```
+9. See all the remote repositories connected to this local repository.
+    ```
+    git remote -v
+    ```
+10. Push the changes on the remote repository.
+    ```
+    git push origin master
+    ```
+
+
+
+
