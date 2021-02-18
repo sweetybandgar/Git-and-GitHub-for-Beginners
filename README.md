@@ -21,8 +21,7 @@
     Ans: The management of changes to documents, computer programs large web sites, and other collections of information.
 
 ### what is GitHub? ![Git logo](github_icon.jpg)
-    Ans: A website to host your repositories projects online.  
-    Being online it makes eay to work in groups with other people and organize your projects into a portfolio for you to show hte potential employers.
+    Ans: A website to host your repositories projects online. Being online it makes eay to work in groups with other people and organize your projects into a portfolio for you to show hte potential employers.
 
 ### Terms
 1. **Directory:** Folder 
@@ -100,7 +99,7 @@
     git commit -m "<__message title__>" -m "<__description__>"
     ```
 
-### SSH keys *(optional if not using HTTPS link)*
+### SSH keys *(optional if using HTTPS link)*
 1. In order to push changes to our github account, we have to prove that we are the owner of that account.
 2. **SSH key:** *connect our local machine to github account.*
 3. Generate SSH key locally. Type the below code in terminal. \
@@ -186,7 +185,13 @@
     ```
     git push origin master
     ```
+## Comparison
+### Adding code from github interface **vs** writing it locally
+*Adding code from github interface* \
+![comparison_1](comparison_1.jpg) 
 
+*Writing code locally from your machine*
+![comparison_2](comparison_2.jpg)
 
-
+>*For more information [watch this.](https://youtu.be/RGOj5yH7evk)*
 
