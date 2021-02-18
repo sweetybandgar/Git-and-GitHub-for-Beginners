@@ -190,7 +190,7 @@
 *Adding code from github interface* \
 ![comparison_1](comparison_1.jpg) 
 
-*Writing code locally from your machine*
+*Writing code locally from your machine* \
 ![comparison_2](comparison_2.jpg)
 
 >*For more information [watch this.](https://youtu.be/RGOj5yH7evk)*
